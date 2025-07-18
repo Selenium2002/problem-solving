@@ -7,10 +7,13 @@ function arrayOfNumbers(arr) {
         }
         else {
             return -1
+
         }
     }
 }
 
+
+// I should take other amount of time to finish 
 console.log("test");
 
 

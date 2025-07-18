@@ -27,4 +27,4 @@ document.getElementById("not").innerHTML =
 
 // ^ -----------> XOR / BITWISE
 
-document.getElementById("xor").innerHTML = 5 ^ 1;
+document.getElementById("xor").innerHTML = 5 ^ 1; //I should study

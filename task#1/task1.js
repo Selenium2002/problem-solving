@@ -5,6 +5,9 @@ document.getElementById('demo').innerHTML = text;
 
 function myArrays(arr1, arr2) {
     return text += arr1.map() + ":" + arr2.map();
+
 }
 console.log("test");
+
+// I should take other amount of time to finish
 
