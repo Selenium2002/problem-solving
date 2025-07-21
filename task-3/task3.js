@@ -2,41 +2,53 @@
 let x = 6;
 let y = 3;
 
-// && -----------> AND
+
+//Bitwise Operators
+
+// & -----------> AND
+
+console.log(x & y);
 
 document.getElementById("and").innerHTML =
-"\"AND\"" + "<br>" +
-(x < 10 && y > 1) + "<br>" +
-(x < 10 && y > 1) + "<br>" +
-(x < 6 && y < 5);
+`\"AND\" ---> & <br> ${x & y} `;
 
 
 
-// || -----------> OR
+// | -----------> OR
+
+console.log(x | y);
 
 document.getElementById("or").innerHTML = 
-"\"OR\"" + "<br>" +
-(x < 10 || y > 1) + "<br>" +
-(x > 10 || y > 1) + "<br>" +
-(x > 10 || y < 1); 
+`\"OR\" ---> | <br> ${x | y}`;
 
 
 
-// ! -----------> NOT
+// ~ -----------> NOT
+
+console.log(~ x);
+console.log(~ y);
 
 document.getElementById("not").innerHTML = 
-"\"NOT\"" + "<br>" +
-!(x === y) + "<br>" + 
-!(x < y) + "<br>" + 
-!(x > y);
+`\"NOT\" ---> ~ <br> 
+not 'x' equals ${~ x} <br>
+not 'y' equals ${~ y}`;
 
 
-// ^ -----------> XOR / BITWISE
+// ^ -----------> XOR
 
-//I should study 
+console.log(x ^ y);
 
-document.getElementById("xor").innerHTML = "\"XOR\"" 
-+ "<br>" +
-5 ^ 1 + "<br>" ;  
-// 50 ^ 8 + "<br>" +  
-// 10 ^ 3 ;  
+document.getElementById("xor").innerHTML =
+`\"XOR\" ---> ^ <br> ${x ^ y}`;  
+
+
+// << ----------> Zero Fill Left Shift
+
+
+
+// >> ----------> Signed Right Shift
+
+
+
+// >>> ---------> Zero Fill Right Shift
+  

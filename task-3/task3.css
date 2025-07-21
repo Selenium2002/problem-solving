@@ -15,8 +15,6 @@
     gap: 50px;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 button{
@@ -29,4 +27,8 @@ a{
     text-decoration: none;
     color: black;
     font-size: 25px;
+}
+
+p{
+    text-align: center;
 }
