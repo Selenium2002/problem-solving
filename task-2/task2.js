@@ -4,24 +4,30 @@ console.log('test');
 
 // console.log(numbers);
 
-let smallest = (numbers) => {
-    for (i = 0 ; i < numbers.length; i++) {
-        console.log(numbers[i]);
 
-        if (numbers[i] > i) {
-            console.log(i);
+    // numbers[i] < smallest && numbers[i] > 0 ? smallest = numbers[i] : smallest = -1;
+
+const smallestNumber = (numbers) => {
+    let smallest = numbers[0];
+
+    for (i = 1 ; i < numbers.length; i++) {
+        if (numbers[i] < smallest && numbers[i] > 0) {
+            smallest = numbers[i];
         }
 
-        else {
-            console.log('nothing');
-        }
-    }
+        // elseif(numbers[i] < 0) {
+        // smallest = -1;
+        // }
+
+    };
+    console.log(smallest);
 };
 
-smallest([5,1,-1,3,10]);
+const nums_1 = [5,1,-1,3,10];
+const nums_2 = [-7,0,-8,-4];
 
-
-
+smallestNumber(nums_1);
+smallestNumber(nums_2);
 
 
 

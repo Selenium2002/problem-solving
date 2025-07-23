@@ -1,37 +1,33 @@
-const arr1 = ["paramount","itv4","spirit"];
-const arr2 =  ["comedy","sport","religion"];
+const chanels = ["paramount","itv4","spirit"];
+const categories =  ["comedy","sport","religion"];
+let result = [];
 
-function first(channels, categories) {
+console.log('test');
 
-    return channels + " : " + categories; 
+console.log(chanels.concat(categories));
 
-}
+const concatination = (arr1, arr2) => {
+    for (i = 0; i < arr1.length; i++)
+        for (j = 0; j < arr2.length; j++)
+            result += arr1[i] + ' : ' + arr2[j] + "\n" ; 
+};
 
-console.log(first("paramount", "comedy"));
-
-document.getElementById("task_1").innerHTML = first("paramount", "comedy");
-
-
-
-function second(chanels, catigories) {
-
-    return chanels + " : " + catigories; 
-
-}
-
-console.log(second("itv4", "sport"));
-
-document.getElementById("task_2").innerHTML = second("itv4", "sport");
+concatination(chanels, categories);
+console.log(result);
 
 
+const cars = ["BMW", "Volvo", "Mini"];
+const brands = ["BMW", "Volvo", "Mini"];
 
-function third(channils, categories) {
+let text = [];
 
-    return channils + " : " + categories; 
 
-}
+for (let x of cars)
 
-console.log(third("spirit", "religion"));
+for (let y of brands)
 
-document.getElementById("task_3").innerHTML = third("spirit", "religion");
+text += x + ' : ' + y + "\n";
+
+console.log(text);
+
 
