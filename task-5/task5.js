@@ -1,15 +1,51 @@
 console.log("test");
-let nor = function (arr) {
-    const greatest = Math.max(...arr);
+
+
+let largest = (nums) => {
+    let larger = nums[0];
+    devide = nums[n] / larger;
+    for (n = 0; n < nums.length; n++) {
+
+        if(nums[n] > larger) {
+            larger = nums[n];
+        }
+            
+        console.log(larger);
+    }
+    
+    console.log('test');
+
+    console.log(n);
+
+
+    
+    console.log(larger);
+    
+    
+    // console.log(devide);
+    
+};
+
+array_1 = [5, 6, 10, 13, 20];
+
+largest(array_1);
+
+
+
+
+let normalize = function (arr) {
+    let greatest = Math.max(...arr);
     const devision = arr.map(num => num / greatest);
     console.log("test");
     console.log(devision);
     return devision;
 }
 
-nor([5, 6, 10, 13, 20]);
 
-document.getElementById('demo').innerHTML = `<h2>JavaScript</h2> <p>Normalized Array 😊</p> ${nor([5, 6, 10, 13, 20])}`;
+
+normalize(array_1);
+
+document.getElementById('demo').innerHTML = `<h2>JavaScript</h2> <p>Normalized Array 😊</p> ${normalize(array_1)}`;
 
 
 

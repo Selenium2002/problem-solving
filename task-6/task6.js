@@ -19,11 +19,11 @@ console.log(recers(6));
 
 // It can also do what loops do ----> Recursion VS Loops  
 let recVsLoop = function (num) {
-  let factorial = 1
+  let factorial = 1;
   for (let i = num; i > 0; i--) {
-    factorial *= i
+    factorial *= i;
   }
-  return factorial
+  return factorial;
 }
 
 console.log('test');
