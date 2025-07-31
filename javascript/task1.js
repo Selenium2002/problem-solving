@@ -6,6 +6,12 @@ console.log('test');
 
 let conc = (arr1, arr2) => {
     console.log(arr1[0] + " : " + arr2[0] + "\n" + arr1[1] + " : " + arr2[1] + "\n" + arr1[2] + " : " + arr2[2] + "\n"); 
+
+// This can be done this way using a simple for loop. Update here and clean the code. 
+for (i=0;i<chanels.length;i++){
+    console.log(arr1[i]+" : "+arr2[i])
+}
+
 }
 conc(chanels, categories);
 
