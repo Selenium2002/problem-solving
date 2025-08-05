@@ -26,6 +26,8 @@ console.log('------------------------------------------------------------');
 demo.innerHTML = `<h2>JavaScript</h2> <p>The number of special characters is ${specialCharacter(text)}`;
 
 console.log('-------------------------------------------------------------');
+console.log('test');
+
 
 
 // Count spaces and underscores with for loop
