@@ -1,67 +1,36 @@
-console.log("test");
-const array_1 = [5, 6, 10, 13, 20];
-let normalizedArray = [];
 
-let largestNumber = nums => {
-    let great = nums[0];
-    for (i of nums) {
-        if (i > great){
-            great = i;
-        }   
-    }
-
-    console.log(great);
-    for (j of nums) {
-        console.log(j);
-        
-    } 
-    let divide = j / great;
-    console.log(divide);
-    
-    
-}
-
-
-largestNumber(array_1);
-
-
-
-
-console.log('-----------------------------------');
-
-
+console.log('test');
 
 function findLargestNumber(arr) {
-  // Handle empty array case
-  if (arr.length === 0) {
-    return "The array is empty.";
-  }
 
-  // Initialize largestNum with the first element
+  let arrOfIntegers = [];
   let largestNum = arr[0];
 
-  // Iterate from the second element
-  for (let i = 1; i < arr.length; i++) {
-    // If the current element is greater than largestNum, update largestNum
-    console.log(arr[i]);
+  for (i = 0; i < arr.length; i++) {
+    // console.log(arr[i]);
     if (arr[i] > largestNum) {
       largestNum = arr[i];
     }
+    
   }
+  console.log('test');
+  console.log(largestNum);
+  for (num of arr) {
+    console.log(num);
+    const normalizing = num / largestNum;
+    // arrOfIntegers += normalizing + " ";
+    arrOfIntegers.push(normalizing);
+  }
+  console.log(arrOfIntegers);
 
-  return largestNum;
+  // return largestNum;
 }
 
-// Example usage:
-const numbers = [10, 5, 20, 8, 15];
-const greatestNumber = findLargestNumber(numbers);
-console.log("The greatest number is:", greatestNumber); // Output: The greatest number is: 20
+const numbers_1 = [10, 5, 20, 8, 15];
+const numbers_2 = [2, 4, 6, 8, 10];
 
-const emptyArray = [];
-console.log(findLargestNumber(emptyArray)); // Output: The array is empty.
-
-
-
+findLargestNumber(numbers_1);
+findLargestNumber(numbers_2);
 
 
 
