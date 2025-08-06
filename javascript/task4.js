@@ -1,16 +1,16 @@
 //Count spaces and underscores with regEx
 
 let specialCharacter = special => {
-    let underscorePatern = /_/g;
-    let spacePatern = /\s/g;
+    let underscorePattern = /_/g;
+    let spacePattern = /\s/g;
 
     console.log('test');
 
-    console.log(special.match(underscorePatern));
-    console.log(special.match(underscorePatern).length);
+    console.log(special.match(underscorePattern));
+    console.log(special.match(underscorePattern).length);
     
-    console.log(special.match(spacePatern));
-    console.log(special.match(spacePatern).length);
+    console.log(special.match(spacePattern));
+    console.log(special.match(spacePattern).length);
 
 };
 
