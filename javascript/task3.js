@@ -39,7 +39,8 @@ not 'y' equals ${~ y}`;
 console.log(x ^ y);
 
 xor.innerHTML =
-`\"XOR\" ---> ^ <br> ${x ^ y}`;  
+`\"XOR\" ---> ^ <br> ${x ^ y}`;
+  
 
 
 // << ----------> Zero Fill Left Shift
