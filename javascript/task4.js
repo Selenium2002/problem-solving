@@ -30,6 +30,7 @@ console.log('test');
 
 
 
+
 // Count spaces and underscores with for loop
 let countSpacesAndUnderscores = str => {
   let count = 0;
