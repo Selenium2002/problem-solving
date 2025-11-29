@@ -1,6 +1,4 @@
-console.log("test");
-
-
+let moodIcon = document.querySelector("#bgColor");
 
 const changeModeToggle = document.getElementById("change-mode-toggle");
 const savedTheme = localStorage.getItem('theme');
@@ -9,9 +7,15 @@ console.log(document.body.classList);
 
 if (savedTheme === 'dark') {
     document.body.classList.add('darkmode');
+    moodIcon.src = "assets/half-moon.png";
+    changeModeToggle.style.textAlign = "left";
+    changeModeToggle.style.backgroundColor = "#4cfafaff";
 }
 else{
     document.body.classList.add('lightmode');
+    moodIcon.src = "assets/sun.png";
+    changeModeToggle.style.textAlign = "right";
+    changeModeToggle.style.backgroundColor = "#103647ff";
 }
 
 
@@ -20,8 +24,14 @@ changeModeToggle.addEventListener("click", () => {
 
     if (document.body.classList.contains('darkmode')) {
         localStorage.setItem('theme', 'dark');
+        moodIcon.src = "assets/half-moon.png";
+        changeModeToggle.style.textAlign = "left";
+        changeModeToggle.style.backgroundColor = "#4cfafaff";
     } else {
         localStorage.setItem('theme', 'light');
+        moodIcon.src = "assets/sun.png";
+        changeModeToggle.style.textAlign = "right";
+        changeModeToggle.style.backgroundColor = "#103647ff";
     }
 
 })

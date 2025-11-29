@@ -66,12 +66,15 @@
   #change-mode-toggle{
     width: 20%;
     cursor: pointer;
+    transition: all 1s;
     
-    .bgcolor{
+    #bgColor{
       width: 50px;
       aspect-ratio: 1/1;
       border-radius: 50%;
       background-color: #85819c;
+      transition: all 1s;
+
     }
   }
 
