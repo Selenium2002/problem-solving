@@ -1,4 +1,10 @@
 console.log('test');
+let firstField = document.getElementById("firstText");
+let secondField = document.getElementById("secondText");
+const concatBtn = document.querySelector("#concatination");
+let numField = document.querySelector("#numField");
+let showConcatPara = document.getElementById("showConcat");
+
 
 
 // Write a function that copies the first N characters from string S2 to string S1, and does not return anything.
@@ -7,25 +13,28 @@ const s1 = "Java";
 const s2 = "Python";
 let mixed = "";
 
-let concatChars = num => {
-    for (i = num; i < s1.length; i++) {
-        if (num <= 3) {
-            mixed += s1[i];
-            console.log(s1[i]);
-        }
+// const s1 = firstField.value;
+// const s2 = secondField.value;
 
-        else if (num > 3) {
-            mixed += "It is out of the range";   
-        } 
+let concatChars = num => {
+    let concating;
+    if (num < 3){
+        for (i = 0; i <= num; i++) {
+            mixed += s1[i];
+        }
+        concating = s2 + mixed; 
+        console.log(concating);
     }
-    console.log(mixed);
-    
-    console.log(s2 + mixed);
-    
-    console.log('test'); 
+   
+    else{
+        concating = "It is out of the range";
+    } 
+
+    console.log(concating);
 };
 
-concatChars(2);
+concatChars(1);
+
 
 
 
