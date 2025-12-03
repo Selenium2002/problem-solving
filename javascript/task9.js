@@ -1,9 +1,9 @@
-console.log('test');
-let firstField = document.getElementById("firstText");
-let secondField = document.getElementById("secondText");
-const concatBtn = document.querySelector("#concatination");
-let numField = document.querySelector("#numField");
-let showConcatPara = document.getElementById("showConcat");
+
+// let firstField = document.getElementById("firstText");
+// let secondField = document.getElementById("secondText");
+// const concatBtn = document.querySelector("#concatination");
+// let numField = document.querySelector("#numField");
+// let showConcatPara = document.getElementById("showConcat");
 
 
 
@@ -19,21 +19,22 @@ let mixed = "";
 let concatChars = num => {
     let concating;
     if (num < 3){
-        for (i = 0; i <= num; i++) {
+        for (i = 0; i < num; i++) {
             mixed += s1[i];
         }
         concating = s2 + mixed; 
-        console.log(concating);
     }
-   
+   else if(num == null){
+    concating = "You have to write a number as a parameter";
+   }
     else{
-        concating = "It is out of the range";
+        concating = "It is out of the range, your range is greater than or equals to 0 and less than 3";
     } 
 
     console.log(concating);
 };
 
-concatChars(1);
+concatChars();
 
 
 
