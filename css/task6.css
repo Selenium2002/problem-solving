@@ -12,6 +12,34 @@
     text-align: center;
 }
 
+input[type=number]{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+button[onclick="recurs()"], button[onclick="recVsLoop()"]{
+    padding: 10px 5px;
+    width: 100%;
+    background-color: bisque;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#demo_1, #demo_2{
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 25px;
+    padding: 10px;
+}
+
+h4{
+    margin-bottom: -30px;
+}
 
 button{
     padding: 30px 20px;
