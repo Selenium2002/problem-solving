@@ -56,29 +56,24 @@
   outline: 0;
 }
 
-.navbar{
-  width: 100%;
-  background: #443535;
-  border: #eedff5 solid 5px;
-  height: 70px;
-  text-align: center;
 
-  #change-mode-toggle{
-    width: 20%;
-    cursor: pointer;
-    transition: all 1s;
-    
+#change-mode-toggle{
+  width: 15%;
+  cursor: pointer;
+  transition: all 1s;
+  position: absolute;
+
     #bgColor{
-      width: 50px;
-      aspect-ratio: 1/1;
-      border-radius: 50%;
-      background-color: #85819c;
-      transition: all 1s;
-
-    }
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #85819c;
+    transition: all .3s;
   }
 
 }
+
+
 
 .darkmode{
     background-image: url("assets/black.jpg");
