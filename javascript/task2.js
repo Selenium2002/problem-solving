@@ -6,7 +6,6 @@ console.log('test');
 
 
 
-
 const smallestNumber = (numbers) => {
     let smallest = numbers[0];
     for (i of numbers) {
