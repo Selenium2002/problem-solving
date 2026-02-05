@@ -8,12 +8,24 @@
 </head>
 <body>
     <div id="main">
-        <h2>HTML</h2>
+        <!-- <h2>HTML</h2>
         <span><strong>Recursion</strong> is a programming technique where a function called a (recursive function) calls itself repeatedly until a specific base case is met. This approach is often used to solve problems that can be broken down into smaller, self-similar subproblems.</span>
-        <span><strong>The factorial of an integer</strong> is the product of all positive integers less than or equal to n</span>
-        <span id="demo"></span>
-        <span id="demo_1"></span>
-        <span id="demo_2"></span>
+        <span><strong>The factorial of an integer</strong> is the product of all positive integers less than or equal to n</span> -->
+
+        <div>
+            <input type="number" placeholder="enter the base case number" id="baseCaseNum2">
+            <button onclick="recurs()">Submit</button>
+            <p id="demo_1">Result</p>
+        </div>
+
+        <h4>When the Recursion and the Loops are working together</h4>
+
+        <div>
+            <input type="number" placeholder="enter the base case number" id="baseCaseNum2">
+            <p id="demo_2">Result</p>
+            <button onclick="recVsLoop(baseCaseNum2.value)">Submit</button>
+        </div>
+
         <button><a href="../index.html">Main Page</a></button>
     </div>
     <script src="../javascript/task6.js"></script>
